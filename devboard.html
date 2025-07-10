@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevBoard – GitHub Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🐙 DevBoard</h1>
+    <input type="text" id="username" placeholder="Enter GitHub username" />
+    <button onclick="fetchGitHubData()">Fetch Profile</button>
+
+    <div class="card" id="profileCard" style="display: none;">
+      <img id="avatar" alt="User Avatar" />
+      <h2 id="name"></h2>
+      <p id="bio"></p>
+      <p><strong>Repos:</strong> <span id="repos"></span></p>
+      <p><strong>Followers:</strong> <span id="followers"></span></p>
+      <p><strong>Following:</strong> <span id="following"></span></p>
+      <a id="profileLink" target="_blank">View Profile</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
